@@ -1,0 +1,62 @@
+========================= Windows Command Line Cheat Sheet =========================
+
+:: Navigation and File Operations ::
+
+cd [path]            Change directory
+dir                  List files and folders
+mkdir [folder]       Create a new folder
+rmdir [folder]       Remove a folder (empty)
+del [file]           Delete a file
+copy [source] [dest] Copy files or folders
+move [source] [dest] Move files or folders
+ren [old] [new]      Rename a file or folder
+
+:: System Information ::
+
+systeminfo           Display system information
+hostname             Display the computer's hostname
+ipconfig             Show IP configuration
+tasklist             List running processes
+taskkill /pid [pid]  Terminate a process by PID
+
+:: Network Commands ::
+
+ping [address]       Send ICMP echo request to test connectivity
+tracert [address]    Trace route to a destination
+nslookup [domain]    Perform DNS lookup
+netstat -a            Display active network connections
+ipconfig /renew      Renew IP configuration
+ipconfig /release    Release IP configuration
+
+:: User and Account Management ::
+
+net user             List user accounts
+net user [username] [password] /add   Add a user account
+net localgroup Administrators [username] /add   Add a user to Administrators
+net user [username] /delete    Delete a user account
+COMPLETE
+:: Miscellaneous ::
+echo [text]          Display text on the screen
+echo off             Turn off command echoing
+cls                  Clear the screen
+help [command]       Get help for a command
+exit                 Close the Command Prompt
+
+:: Redirection and Pipes ::
+
+> [file]              Redirect command output to a file (overwrite)
+>> [file]             Redirect command output to a file (append)
+|                    Pipe output of one command as input to another
+
+:: Variables and Batch Scripts ::
+
+set [variable=value] Set environment variable
+%variable%           Access value of environment variable
+%date%               Current date
+%time%               Current time
+%username%           Current username
+if [condition] (     Conditional execution block
+) else (
+)
+
+==================================================================================
